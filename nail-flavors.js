@@ -339,6 +339,9 @@ var lists = {
     finishAdj: [
         "sparkle",
         "matte",
+        "holo",
+        "mirrored",
+        "chrome",
         "holographic",
         "crackled",
         "crazed",
@@ -396,14 +399,10 @@ var lists = {
         "orange",
         "yellow",
 
-    
 
-
-
-
-
-        ...repeat(5, "{flower}"),
-        ...repeat(5, "{precious}"),
+        ...repeat(10, "{food}"),
+        ...repeat(10, "{flower}"),
+        ...repeat(10, "{precious}"),
     ],
 
     food: [
@@ -561,6 +560,8 @@ var lists = {
         // "feelings",
         "{feeling} {colour}",
         "{feeling} {adj} {colour}",
+        "{finishAdj} {colour}",
+        "{feeling} {finishAdj} {colour}",
         "{colour} {feelingNoun}",
 
         // "descriptors",
@@ -604,7 +605,7 @@ var lists = {
 //     "{character}'s night out",
 // ];
 // lists.title = lists.title.filter(x => x.includes('{occasion}')); // [ "the {colour} {character}" ]; 
-// lists.title = ["{feeling} {adj} {colour}"];
+// lists.title = ["{feeling} {finishAdj} {colour}"];
 
 // --------------------------------------------------------
 // --------------------------------------------------------
