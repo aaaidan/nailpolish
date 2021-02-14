@@ -52,6 +52,48 @@ var lists = {
         "top",
     ],
 
+    adv: [
+        "luciously",
+        "deeply",
+        "madly",
+        "fabulously",
+        "gorgeously",
+        "glamorously",
+        "verily",
+        "preposterously",
+        "freely",
+        "thoughtfully",
+        "pensively",
+        "happily",
+        "ecstatically",
+        "wildly",
+        "sassily",
+        "charmingly",
+        "disarmingly",
+        "persuasively",
+        "perplexingly",
+        "confusingly",
+        "adventurously",
+        "lovingly",
+        "naughtily",
+        "demurely",
+        "honestly",
+        "joyfully!!",
+        "seductively!",
+        "salaciously",
+        "carelessly",
+        "recklessly",
+        "foolishly",
+        "tamely",
+        "savagely",
+        "fiercely",
+        "sleekly",
+        "passionately",
+        "extravagantly",
+        "outrageously",
+        "fantastically",
+    ],
+
     adj: [
         "iridescent",
         "deep",
@@ -70,12 +112,22 @@ var lists = {
         "luscious",
         "gorgeous",
         "glamorous",
-        "glad",
         "gloomy",
+        "sun-kissed",
+        "sunny",
+        "moonlit",
+        "midnight",
+        "arctic",
 
         "equine",
         "bovine",
         "lupine",
+        "supine",
+        "canine",
+        "feline",
+        "porcine",
+        "serpentine",
+        "vulpine",
 
         "{placeAdj}",
 
@@ -96,6 +148,13 @@ var lists = {
         "dancecard",
         "{flower}",
         "spell",
+        "bomb",
+        "bombshell",
+        "eyebrow",
+        "whisper",
+        "spaceship",
+        "twin",
+        "dream",
     ],
     
     place: [
@@ -106,10 +165,12 @@ var lists = {
         "poolside",
         "dancefloor",
         "outer space",
+        "wildfire",
 
         "downtown",
         "uptown",
         "soho",
+        "hinterland",
         
         "mardi gras",
         "paris",
@@ -120,6 +181,7 @@ var lists = {
     ],
 
     feeling: [
+        "ardent",
         "lonely",
         "free",
         "thoughtful",
@@ -150,10 +212,40 @@ var lists = {
         "cosmopolitan",
         "joyful",
         "stormy",
+        "seductive",
+        "salacious",
+        "lacivious",
+        "wanton",
+        "careless",
+        "reckless",
+        "foolish",
+        "untamed",
+        "wild",
+        "savage",
+        "fierce",
+        "inclement",
+        "windswept",
+        "blustery",
+        "sleek",
+        "incendiary",
+        "incensed",
+        "passionate",
+        "smitten",
+        "infatuated",
+        "extravagant",
+        "outrageous",
+        "fanciful",
+        "fantastic",
+        "tamed",
+        "tame",
+        "fervent",
+        "earnest",
     ],
     feelingNoun: [
         // "sadness",
         "joy",
+        "fantasy",
+        "outrage",
         "thoughts",
         "happiness",
         "ecstasy",
@@ -161,6 +253,8 @@ var lists = {
         "rage",
         "opinions",
         "love",
+        "seduction",
+        "persuasion",
         // "sex",
         "romp",
         "stomp",
@@ -179,6 +273,8 @@ var lists = {
         "holiday",
         "vacation",
         "roadtrip",
+        "{adj} night out",
+        "{character}'s night out",
         "girl's night",
         "boy's night",
         "anniversary",
@@ -196,10 +292,11 @@ var lists = {
         "celebration",
         "spa day",
         "first date",
-        "date",
+        "blind date",
         "future",
         "trick",
         "disco",
+        "debut",
         // "discothèque", // rare
         // "third date", // rare
     ],
@@ -211,6 +308,7 @@ var lists = {
 
     colour: [
         "pearl",
+        "scarlet",
         "lavender",
         "blush",
         "magenta",
@@ -220,7 +318,7 @@ var lists = {
         "petal",
         "sky",
         "gunmetal",
-        "d'argent",
+        "argenté",
         "rouge",
         "violet",
         "amaranth",
@@ -230,11 +328,12 @@ var lists = {
         "cerise",
         "vermillion",
         "jet",
-        "arctic",
         "rainbow",
+        "blonde",
+        "midnight",
 
         ...repeat(5, "{flower}"),
-        ...repeat(5, "{jewel}"),
+        ...repeat(5, "{precious}"),
     ],
 
     food: [
@@ -261,8 +360,9 @@ var lists = {
         "milk",
         "buttermilk",
         "lemondrop",
+        "coffee",
     ],
-    jewel: [
+    precious: [
         "amber",
         "amethyst",
         "ruby",
@@ -274,6 +374,8 @@ var lists = {
         "copper",
         "emerald",
         "jade",
+        "jewel",
+        "platinum",
     ],
 
     flower: [
@@ -321,10 +423,21 @@ var lists = {
         "catlady",
         "celebrity",
         "lover",
+        "best friend",
+        "bestie",
 
+        "{monster}",
         "{animal}",
     ],
     
+    monster: [
+        "phantom",
+        "witch",
+        "monster",
+        "dragon",
+        "fairy",
+    ],
+
     animal: [
         "cheetah",
         "jaguar",
@@ -337,7 +450,7 @@ var lists = {
     title: [
         // "feelings",
         "{feeling} {colour}",
-        "{adj} {feeling} {colour}",
+        "{feeling} {adj} {colour}",
         "{colour} {feelingNoun}",
 
         // "descriptors",
@@ -351,16 +464,19 @@ var lists = {
         "{occasion} {food}",
         "{adj} {occasion}",
         // "{adj} {occasion} for {character}", // boring
-        "{adj} {colour} for {character}",
+        "{adj} {colour} (for my {character})",
         "to my {character}",
-        "his {adj} {item}",
+        // "his {adj} {item}", // this is not about him
         "her {adj} {item}",
         "{character}'s {occasion}",
         "{animal}'s {occasion}",
+        "{colour} {animal}",
         "{animal} {colour}",
         "{animal} {feelingNoun}",
         
         "{adj} {feelingNoun}",
+
+        "{adj} {item}"
 
         // "food",
         // "risque",
@@ -372,9 +488,13 @@ var lists = {
 
 }
 
-
-// lists.title = [ "the {colour} {character}" ]; // override
-
+// override
+// lists.occasion = [
+//     "{adj} night out",
+//     "{character}'s night out",
+// ];
+// lists.title = lists.title.filter(x => x.includes('{occasion}')); // [ "the {colour} {character}" ]; 
+lists.title = ["{feeling} {adj} {colour}"];
 
 // --------------------------------------------------------
 // --------------------------------------------------------
@@ -382,7 +502,12 @@ var lists = {
 
 
 function pick(list) {
-    return list[Math.floor(list.length * Math.random())];
+    const r = Math.random();
+    const index = Math.floor(list.length * r);
+    if (!list[index]) {
+        debugger;
+    }
+    return list[index];
 }
 
 function parse(str) {
