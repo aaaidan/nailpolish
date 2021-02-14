@@ -66,6 +66,16 @@ var lists = {
         "soft",
         "double",
         "twin",
+        "bridal",
+        "luscious",
+        "gorgeous",
+        "glamorous",
+        "glad",
+        "gloomy",
+
+        "equine",
+        "bovine",
+        "lupine",
 
         "{placeAdj}",
 
@@ -82,12 +92,21 @@ var lists = {
         "japanese",
     ],
 
+    item: [
+        "dancecard",
+        "{flower}",
+        "spell",
+    ],
+    
     place: [
         "catwalk",
         "penthouse",
         "spa",
         "hotel",
         "poolside",
+        "dancefloor",
+        "outer space",
+
         "downtown",
         "uptown",
         "soho",
@@ -102,20 +121,22 @@ var lists = {
 
     feeling: [
         "lonely",
+        "free",
+        "thoughtful",
         "blushing",
         "pensive",
-        "thoughtful",
         "happy",
         "ecstatic",
+        "loopy",
+        "wild",
         "sassy",
+        "livid",
         "charming",
         "disarming",
         "persuasive",
         "perplexed",
         "confused",
         "adventurous",
-        "wild",
-        "livid",
         "loving",
         "sexy",
         "rompy",
@@ -138,6 +159,7 @@ var lists = {
         "ecstasy",
         "sass",
         "rage",
+        "opinions",
         "love",
         // "sex",
         "romp",
@@ -177,6 +199,8 @@ var lists = {
         "date",
         "future",
         "trick",
+        "disco",
+        // "discothèque", // rare
         // "third date", // rare
     ],
 
@@ -235,6 +259,8 @@ var lists = {
         "gummi-bear",
         "butter",
         "milk",
+        "buttermilk",
+        "lemondrop",
     ],
     jewel: [
         "amber",
@@ -259,6 +285,7 @@ var lists = {
         'poppy',
         'orchid',
         'cherryblossom',
+        'lupin',
     ],
 
     character: [
@@ -293,6 +320,7 @@ var lists = {
         "king",
         "catlady",
         "celebrity",
+        "lover",
 
         "{animal}",
     ],
@@ -324,6 +352,9 @@ var lists = {
         "{adj} {occasion}",
         // "{adj} {occasion} for {character}", // boring
         "{adj} {colour} for {character}",
+        "to my {character}",
+        "his {adj} {item}",
+        "her {adj} {item}",
         "{character}'s {occasion}",
         "{animal}'s {occasion}",
         "{animal} {colour}",
