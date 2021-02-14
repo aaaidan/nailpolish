@@ -39,6 +39,8 @@ var lists = {
         "beautifully",
         "perfectly",
         "radically",
+        "unbelievably",
+
     ],
 
     superlative: [
@@ -92,6 +94,10 @@ var lists = {
         "extravagantly",
         "outrageously",
         "fantastically",
+        "perfectly",
+        "wildly",
+        "secretly",
+
     ],
 
     adj: [
@@ -118,6 +124,19 @@ var lists = {
         "moonlit",
         "midnight",
         "arctic",
+        "sequinned",
+        "adorned",
+        "glittering",
+        "candle-lit",
+        "hazy",
+        "forgotten",
+        "treasured",
+        "secret",
+        "your new",
+        "favourite",
+
+
+
 
         "equine",
         "bovine",
@@ -155,6 +174,18 @@ var lists = {
         "spaceship",
         "twin",
         "dream",
+        "ember",
+        "spark",
+        "gift",
+        "soul",
+        "tiara",
+        "crush",
+        "proposal",
+        "suggestion",
+
+
+
+
     ],
     
     place: [
@@ -171,6 +202,10 @@ var lists = {
         "uptown",
         "soho",
         "hinterland",
+        "tundra",
+        "desert",
+        "dreamscape",
+
         
         "mardi gras",
         "paris",
@@ -303,7 +338,28 @@ var lists = {
 
     finishAdj: [
         "sparkle",
-        "mattle",
+        "matte",
+        "holographic",
+        "crackled",
+        "crazed",
+        "buff",
+        "pearlescent",
+        "evanescent",
+        "smoky",
+        "hazy",
+        "rusty",
+        "rusted",
+        "watercolour",
+        "faded",
+        "glowing",
+        "verdant",
+        "mossy",
+
+
+
+
+
+
     ],
 
     colour: [
@@ -331,6 +387,20 @@ var lists = {
         "rainbow",
         "blonde",
         "midnight",
+        "buff",
+        "taupe",
+        "grey",
+        "green",
+        "mint",
+        "pink",
+        "orange",
+        "yellow",
+
+    
+
+
+
+
 
         ...repeat(5, "{flower}"),
         ...repeat(5, "{precious}"),
@@ -361,6 +431,29 @@ var lists = {
         "buttermilk",
         "lemondrop",
         "coffee",
+        "latté" ,
+        "espresso",
+        "rosé",
+        "merlot",
+        "caramel",
+        "taffy",
+        "watermelon",
+        "peach",
+        "blackberry",
+        "milkshake",
+        "sorbét",
+        "frappé",
+        "cappuccino",
+        "honey",
+        "honeycomb",
+        "cucumber",
+        "milk",
+        "cream",
+        "tea",
+
+
+
+
     ],
     precious: [
         "amber",
@@ -376,6 +469,9 @@ var lists = {
         "jade",
         "jewel",
         "platinum",
+        "gold",
+        "titanium",
+
     ],
 
     flower: [
@@ -388,6 +484,13 @@ var lists = {
         'orchid',
         'cherryblossom',
         'lupin',
+        "sunflower",
+        "tea rose",
+        "snowdrop",
+        "roses",
+
+        
+
     ],
 
     character: [
@@ -425,6 +528,12 @@ var lists = {
         "lover",
         "best friend",
         "bestie",
+        "bridesmaid",
+        "best man",
+        "VIP",
+        "mystery guest",
+        "lover",
+
 
         "{monster}",
         "{animal}",
@@ -445,6 +554,7 @@ var lists = {
         "parakeet",
         "unicorn", // rare
         "fawn",
+        "pony",
     ],
 
     title: [
@@ -494,7 +604,7 @@ var lists = {
 //     "{character}'s night out",
 // ];
 // lists.title = lists.title.filter(x => x.includes('{occasion}')); // [ "the {colour} {character}" ]; 
-lists.title = ["{feeling} {adj} {colour}"];
+// lists.title = ["{feeling} {adj} {colour}"];
 
 // --------------------------------------------------------
 // --------------------------------------------------------
