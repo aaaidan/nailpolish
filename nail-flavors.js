@@ -40,6 +40,8 @@ var lists = {
         "perfectly",
         "radically",
         "unbelievably",
+        
+
 
     ],
 
@@ -97,6 +99,8 @@ var lists = {
         "perfectly",
         "wildly",
         "secretly",
+        "so",
+        "dangerously",
 
     ],
 
@@ -118,7 +122,7 @@ var lists = {
         "luscious",
         "gorgeous",
         "glamorous",
-        "gloomy",
+        "dusky",
         "sun-kissed",
         "sunny",
         "moonlit",
@@ -132,8 +136,52 @@ var lists = {
         "forgotten",
         "treasured",
         "secret",
-        "your new",
+        "new",
         "favourite",
+        "non-binary",
+        "intersectional",
+        "undefined",
+        "transmutable",
+        "universal",
+        "enveloped",
+        "caressed",
+        "moon-kissed",
+        "star-struck",
+        "irregular",
+        "beautiful",
+        "stunning",
+        "dewy",
+        "frosty",
+        "bestowed",
+        "impressive",
+        "breathtaking",
+        "minty-fresh",
+        "minty",
+        "unquestionable",
+        "unmistakable",
+        "occasional",
+        "rare",
+        "precious",
+        "solemn",
+        "daring",
+        "dashing",
+        "stubborn",
+        "rosy",
+        "cheerful",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -182,6 +230,67 @@ var lists = {
         "crush",
         "proposal",
         "suggestion",
+        "eyelash",
+        "cheek",
+        "ticket",
+        "escape",
+        "situation",
+        "sleep",
+        "morning",
+        "evening",
+        "dress",
+        "tuxedo",
+        "sun",
+        "moon",
+        "stars",
+        "universe",
+        "convertible",
+        "impossibility",
+        "promise",
+        "spotlight",
+        "accusation",
+        "novella",
+
+        "heart-break",
+        "affair",
+        "kiss",
+        "bouquet",
+        "message",
+        "manifesto",
+        "dare",
+        "hope",
+        "daydream",
+        "memory",
+        "reverie",
+        "sonata",
+        "moonlight",
+        "morning light",
+        "expectation",
+        "breath",
+        "sigh",
+        "whisper",
+        "cobweb",
+        "moonbeam",
+        "sunbeam",
+        "destiny",
+        "diamond",
+        "pearl",
+        "singularity",
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
 
 
 
@@ -196,15 +305,22 @@ var lists = {
         "poolside",
         "dancefloor",
         "outer space",
-        "wildfire",
-
-        "downtown",
+        "fireside",
+        "ballroom",
         "uptown",
         "soho",
         "hinterland",
         "tundra",
         "desert",
         "dreamscape",
+        "backstage",
+        "boudoir",
+        "centre stage",
+        "downtown",
+        "rainforest",
+        "jungle",
+
+
 
         
         "mardi gras",
@@ -275,18 +391,37 @@ var lists = {
         "tame",
         "fervent",
         "earnest",
+        "celebrated",
+        "delighted",
+        "unrequited",
+        "blameless",
+        "honorary",
+        "spicy",
+        "sweet",
+        "big",
+        "tiny",
+        "miniature",
+        "pequeño",
+        "adorable",
+        "dazzling",
+        "bewitching",
+
+
+
+
+
+
     ],
     feelingNoun: [
         // "sadness",
         "joy",
         "fantasy",
         "outrage",
-        "thoughts",
+        "reflections",
         "happiness",
         "ecstasy",
         "sass",
         "rage",
-        "opinions",
         "love",
         "seduction",
         "persuasion",
@@ -298,6 +433,7 @@ var lists = {
         "demureness",
         "honesty",
         "toxicity",
+        "pride",
     ],
 
     occasion: [
@@ -313,7 +449,7 @@ var lists = {
         "girl's night",
         "boy's night",
         "anniversary",
-        "occasion",
+        "special occasion",
         "surprise",
         "surprise party",
         "birthday party",
@@ -332,6 +468,10 @@ var lists = {
         "trick",
         "disco",
         "debut",
+        "day off",
+        "safari",
+
+
         // "discothèque", // rare
         // "third date", // rare
     ],
@@ -357,6 +497,28 @@ var lists = {
         "glowing",
         "verdant",
         "mossy",
+        "marbled",
+        "antique",
+        "powder",
+        "shimmering",
+        "silken",
+        "silky",
+        "sugary",
+        "burnished",
+        "muted",
+        "amplified",
+        "powdery",
+        "buttery",
+        "multifaceted",
+        "sparkly",
+
+
+
+
+
+
+
+
 
 
 
@@ -398,6 +560,11 @@ var lists = {
         "pink",
         "orange",
         "yellow",
+        "alabaster",
+        "marble",
+        "brunette",
+        "auburn",
+
 
 
         ...repeat(10, "{food}"),
@@ -449,6 +616,9 @@ var lists = {
         "milk",
         "cream",
         "tea",
+        "vanilla",
+        "spice",
+
 
 
 
@@ -470,6 +640,10 @@ var lists = {
         "platinum",
         "gold",
         "titanium",
+        "alloy",
+        "bronze",
+
+
 
     ],
 
@@ -487,6 +661,17 @@ var lists = {
         "tea rose",
         "snowdrop",
         "roses",
+        "violet",
+        // "carnations",
+        "carnation",
+        "buttercup",
+        "blossom",
+        "rosebud",
+
+
+        
+
+
 
         
 
@@ -515,14 +700,14 @@ var lists = {
         "groom",
         "barista",
         "barrister",
-        "solicitor",
+        "individual",
         "provocateur",
         "agent",
         "princess",
         "queen",
         "prince",
         "king",
-        "catlady",
+        "messenger",
         "celebrity",
         "lover",
         "best friend",
@@ -531,11 +716,24 @@ var lists = {
         "best man",
         "VIP",
         "mystery guest",
-        "lover",
+        "cutie",
+        "ballerina",
+        "cadet",
+        "superstar",
+        "star",
+        "love",
+        "darling",
+        "sweetheart",
+        "sweet pea",
+        "trickster",
+        "harbinger",
+        "protagonist",
+        "hero",
+        "heroine",
+        "angel",
 
-
-        "{monster}",
-        "{animal}",
+        ...repeat(20, "{monster}"),
+        ...repeat(20, "{animal}"),
     ],
     
     monster: [
@@ -554,6 +752,24 @@ var lists = {
         "unicorn", // rare
         "fawn",
         "pony",
+        "bunny",
+        "butterfly",
+        "viper",
+        "lizard",
+        "tiger",
+        "fox",
+        "bearcub",
+        "kitten",
+        "puppy",
+        "dragon",
+    ],
+
+    pair: [
+        "{character} vs. {character}",
+        "{character} & {character}",
+        "{character} + {character}",
+        "{character} and {character}",
+        "{character} meets {character}"
     ],
 
     title: [
@@ -585,9 +801,18 @@ var lists = {
         "{animal} {colour}",
         "{animal} {feelingNoun}",
         
+        "{feelingNoun} without {feelingNoun}",
+        "{feelingNoun} but {feelingNoun}",
+        "{feelingNoun} yet {feelingNoun}",
+        "{feelingNoun} and {feelingNoun}",
+        
         "{adj} {feelingNoun}",
+        
+        "{place} {feeling}",
 
-        "{adj} {item}"
+        "{adj} {item}",
+
+        "{pair}"
 
         // "food",
         // "risque",
@@ -605,8 +830,9 @@ var lists = {
 //     "{character}'s night out",
 // ];
 // lists.title = lists.title.filter(x => x.includes('{occasion}')); // [ "the {colour} {character}" ]; 
-// lists.title = ["{feeling} {finishAdj} {colour}"];
 
+// lists.title = ["{finishAdj} {animal} {colour}"];
+// 
 // --------------------------------------------------------
 // --------------------------------------------------------
 // --------------------------------------------------------
