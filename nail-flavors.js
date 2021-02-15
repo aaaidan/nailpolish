@@ -862,8 +862,18 @@ class NailFlavor {
         /** @type {Node} */
         this.node = NailFlavor.nailTemplate.content.cloneNode(true);
 
-        this.node.querySelector(".title").textContent = title;
-        this.node.querySelector(".template").textContent = template;
+        this.flavor = this.node.querySelector(".flavor");
+
+        const hue = 360*Math.random();
+        const sat = 100 * (1 - Math.pow(0.5, Math.random() * 4));
+        const lightness = 50;
+
+        this.flavor.querySelector(".swatch").style.setProperty("--color", `hsl(${hue}deg, ${sat}%, ${lightness}%)`);
+        this.flavor.querySelector(".swatch").style.setProperty("--shadow-color", `hsla(${hue}deg, ${(sat + 100) / 2}%, ${15}%, 0.5)`);
+
+        this.flavor.querySelector(".title").textContent = title;
+        this.flavor.querySelector(".template").textContent = template;
+
     }   
 }
 /** @type {HTMLTemplateElement} */
