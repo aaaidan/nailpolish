@@ -82,8 +82,8 @@ var lists = {
         "naughtily",
         "demurely",
         "honestly",
-        "joyfully!!",
-        "seductively!",
+        "joyfully",
+        "seductively",
         "salaciously",
         "carelessly",
         "recklessly",
@@ -131,7 +131,7 @@ var lists = {
         "sequinned",
         "adorned",
         "glittering",
-        "candle-lit",
+        "candlelit",
         "hazy",
         "forgotten",
         "treasured",
@@ -168,6 +168,7 @@ var lists = {
         "stubborn",
         "rosy",
         "cheerful",
+        "single",
 
 
 
@@ -276,24 +277,11 @@ var lists = {
         "diamond",
         "pearl",
         "singularity",
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-    
-
-
-
+        "candlelight",
+        "betrayal",
+        "loveletter",
+        "galaxy",
+        "vice",
 
     ],
     
@@ -405,12 +393,6 @@ var lists = {
         "adorable",
         "dazzling",
         "bewitching",
-
-
-
-
-
-
     ],
     feelingNoun: [
         // "sadness",
@@ -731,6 +713,10 @@ var lists = {
         "hero",
         "heroine",
         "angel",
+        "venus",
+        "neptune",
+        "interloper",
+        "soothsayer",
 
         ...repeat(20, "{monster}"),
         ...repeat(20, "{animal}"),
@@ -774,10 +760,10 @@ var lists = {
 
     title: [
         // "feelings",
-        "{feeling} {colour}",
-        "{feeling} {adj} {colour}",
-        "{finishAdj} {colour}",
-        "{feeling} {finishAdj} {colour}",
+        ...repeat(5, "{feeling} {colour}"),
+        ...repeat(5, "{feeling} {adj} {colour}"),
+        ...repeat(5, "{finishAdj} {colour}"),
+        ...repeat(5, "{feeling} {finishAdj} {colour}"),
         "{colour} {feelingNoun}",
 
         // "descriptors",
@@ -793,7 +779,8 @@ var lists = {
         // "{adj} {occasion} for {character}", // boring
         "{adj} {colour} (for my {character})",
         "to my {character}",
-        // "his {adj} {item}", // this is not about him
+        "his {adj} {item}",
+        "their {adj} {item}",
         "her {adj} {item}",
         "{character}'s {occasion}",
         "{animal}'s {occasion}",
@@ -808,9 +795,9 @@ var lists = {
         
         "{adj} {feelingNoun}",
         
-        "{place} {feeling}",
+        "{place} {feelingNoun}",
 
-        "{adj} {item}",
+        ...repeat(10, "{adj} {item}"),
 
         "{pair}"
 
