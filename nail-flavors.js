@@ -40,9 +40,6 @@ var lists = {
         "perfectly",
         "radically",
         "unbelievably",
-        
-
-
     ],
 
     superlative: [
@@ -54,6 +51,9 @@ var lists = {
         "smoothest",
         "best",
         "top",
+        "latest",
+        "gentlest",
+        "!most {adj}",
     ],
 
     adv: [
@@ -63,8 +63,8 @@ var lists = {
         "fabulously",
         "gorgeously",
         "glamorously",
-        "verily",
-        "preposterously",
+        "!!verily",
+        "!preposterously",
         "freely",
         "thoughtfully",
         "pensively",
@@ -107,10 +107,10 @@ var lists = {
     adj: [
         "iridescent",
         "deep",
+        "dank",
         "burnt",
         "bright",
         "murky",
-        "toxic",
         "grand",
         "dusty",
         "milky",
@@ -130,6 +130,7 @@ var lists = {
         "arctic",
         "sequinned",
         "adorned",
+        "unadorned",
         "glittering",
         "candlelit",
         "hazy",
@@ -169,40 +170,28 @@ var lists = {
         "rosy",
         "cheerful",
         "single",
+        
+        "!toxic",
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        "equine",
-        "bovine",
+        "!equine",
         "lupine",
-        "supine",
-        "canine",
+        "!canine",
         "feline",
-        "porcine",
         "serpentine",
         "vulpine",
+        "!!bovine",
+        "!!porcine",
+        "!!supine",
+        
+        ...repeat(5, "{placeAdj}"),
 
-        "{placeAdj}",
+        ...repeat(5, "{place}"),
 
-        "{place}",
-
-        "{feeling}",
-        "{superlative}",
+        ...repeat(5, "{feeling}"),
+        ...repeat(5, "{superlative}"),
         
         ...repeat(5, "{intensifier} {adj}"),
     ],
@@ -282,7 +271,13 @@ var lists = {
         "loveletter",
         "galaxy",
         "vice",
+        "parcel",
+        "insignia",
 
+        "photon",
+        "electron",
+        "neutron",
+        "gamma ray",
     ],
     
     place: [
@@ -393,6 +388,8 @@ var lists = {
         "adorable",
         "dazzling",
         "bewitching",
+        "enraged",
+        "rageful",
     ],
     feelingNoun: [
         // "sadness",
@@ -407,15 +404,13 @@ var lists = {
         "love",
         "seduction",
         "persuasion",
-        // "sex",
         "romp",
         "stomp",
         "belligerence",
-        // "silliness",
         "demureness",
         "honesty",
-        "toxicity",
         "pride",
+        "!!toxicity",
     ],
 
     occasion: [
@@ -436,12 +431,9 @@ var lists = {
         "surprise party",
         "birthday party",
         "party",
-        "photoshoot",
-        "promo",
         "adventure",
         "festival",
         "parade",
-        "mardi gras",
         "celebration",
         "spa day",
         "first date",
@@ -453,9 +445,13 @@ var lists = {
         "day off",
         "safari",
 
+        "!mardi gras",
+        "!discothèque",
+        "!photoshoot",
+        "!promo",
 
-        // "discothèque", // rare
-        // "third date", // rare
+        "!!third date",
+        "!!pubcrawl",
     ],
 
     finishAdj: [
@@ -466,7 +462,7 @@ var lists = {
         "chrome",
         "holographic",
         "crackled",
-        "crazed",
+        "!crazed",
         "buff",
         "pearlescent",
         "evanescent",
@@ -517,19 +513,19 @@ var lists = {
         "magenta",
         "mauve",
         "crimson",
-        "cerulean",
+        "!cerulean",
         "petal",
         "sky",
         "gunmetal",
         "argenté",
         "rouge",
         "violet",
-        "amaranth",
+        "!amaranth",
         "sienna",
         "coral",
         "purple",
         "cerise",
-        "vermillion",
+        "!vermillion",
         "jet",
         "rainbow",
         "blonde",
@@ -542,12 +538,10 @@ var lists = {
         "pink",
         "orange",
         "yellow",
-        "alabaster",
+        "!alabaster",
         "marble",
         "brunette",
         "auburn",
-
-
 
         ...repeat(10, "{food}"),
         ...repeat(10, "{flower}"),
@@ -624,9 +618,6 @@ var lists = {
         "titanium",
         "alloy",
         "bronze",
-
-
-
     ],
 
     flower: [
@@ -649,14 +640,6 @@ var lists = {
         "buttercup",
         "blossom",
         "rosebud",
-
-
-        
-
-
-
-        
-
     ],
 
     character: [
@@ -717,25 +700,28 @@ var lists = {
         "neptune",
         "interloper",
         "soothsayer",
-
-        ...repeat(20, "{monster}"),
+        
         ...repeat(20, "{animal}"),
+        "!{monster}",
     ],
     
     monster: [
         "phantom",
         "witch",
+        "familiar",
         "monster",
         "dragon",
         "fairy",
+        "!!taniwha",
     ],
 
     animal: [
         "cheetah",
         "jaguar",
         "dove",
-        "parakeet",
-        "unicorn", // rare
+        "!parakeet",
+        "!!lorikeet",
+        "!!unicorn", // rare
         "fawn",
         "pony",
         "bunny",
@@ -747,7 +733,7 @@ var lists = {
         "bearcub",
         "kitten",
         "puppy",
-        "dragon",
+        "!dragon",
     ],
 
     pair: [
@@ -759,7 +745,6 @@ var lists = {
     ],
 
     title: [
-        // "feelings",
         ...repeat(5, "{feeling} {colour}"),
         ...repeat(5, "{feeling} {adj} {colour}"),
         ...repeat(5, "{finishAdj} {colour}"),
@@ -789,9 +774,11 @@ var lists = {
         "{animal} {feelingNoun}",
         
         "{feelingNoun} without {feelingNoun}",
-        "{feelingNoun} but {feelingNoun}",
-        "{feelingNoun} yet {feelingNoun}",
-        "{feelingNoun} and {feelingNoun}",
+        "{feeling} but {feeling}",
+        "{feeling} yet {feeling}",
+        "{feeling} and {feeling}",
+        "all {feelingNoun}, no {feelingNoun}",
+        "all {feelingNoun} and no {feelingNoun}",
         
         "{adj} {feelingNoun}",
         
@@ -825,13 +812,36 @@ var lists = {
 // --------------------------------------------------------
 
 
-function pick(list) {
+const rareChance = 0.05;
+const pickCount = [0,0,0];
+
+/**
+ * 
+ * @param {String[]} picklist 
+ */
+function pick(picklist) {
+
+    let rareness = Math.random() < rareChance ? ( Math.random() < rareChance ? 2 : 1 ) : 0;
+    let list;
+    
+    rareness++;
+    do {
+        rareness--;
+        list = picklist.filter(x => x.match(RegExp(`^\!{${rareness}}[^!]`)));
+    } while(list.length == 0);
+
     const r = Math.random();
     const index = Math.floor(list.length * r);
     if (!list[index]) {
         debugger;
     }
-    return list[index];
+    const pickedWord = list[index].replace(/^(!*)/, "");
+    if (rareness > 0) {
+        console.log(`Picking rare (${rareness}) word: ${pickedWord}.`);
+    }
+    pickCount[rareness] = (++pickCount[rareness]) || 1;
+
+    return pickedWord;
 }
 
 function parse(str) {
@@ -881,6 +891,13 @@ for (let i=0; i<300; i++) {
     let { title, template } = flavor();
     main.appendChild(new NailFlavor({ title, template }).node);
 }
+
+const totalPicks = pickCount.reduce((a,b) => a+b);
+const rarePicks = (pickCount[1] || 0);
+const legendaryPicks = (pickCount[2] || 0);
+console.log("Total Picks: ", totalPicks);
+console.log("Rare:", rarePicks,`(${(rarePicks / totalPicks * 100).toFixed(2)}%)`);
+console.log("Legendary:", legendaryPicks, `(${(legendaryPicks / totalPicks * 100).toFixed(2)}%)`);
 
 
 
